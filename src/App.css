@@ -1,6 +1,12 @@
 .App {
   text-align: center;
+  position: absolute;
+  top: 30%;
+  width: 80%;
+  left: 10%;
 }
+
+
 
 .App-logo {
   height: 40vmin;
@@ -22,6 +28,76 @@
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
+}
+
+.dropdown-container {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  margin-left: 25%;
+  align-content: center;
+  border-bottom: #3498db solid;
+}
+
+.input-container {
+  display: flex;
+  align-items: center;
+}
+
+input {
+  flex: 1;
+  padding: 8px;
+  margin-bottom: 8px;
+  border: none;
+}
+
+.chip-container {
+  display: flex;
+  align-items: center;
+  margin-bottom: 8px;
+  flex-wrap: wrap;
+}
+
+h1{
+  color: darkred;
+  font-size: 4rem;
+  text-decoration: underline;
+}
+
+.chip {
+  background-color: #0c0d0d;
+  color: #fff;
+  border-radius: 4px;
+  padding: 4px 8px;
+  margin: 4px;
+  display: flex;
+  align-items: center;
+  white-space: nowrap;
+}
+
+.chip button {
+  background-color: transparent;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  margin-left: 4px;
+}
+
+.dropdown-list {
+  border: 4px solid #e80a0a;;
+  max-height: 150px;
+  overflow-y: auto;
+  background-color: wheat;
+}
+
+.dropdown-item {
+  padding: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.dropdown-item:hover {
+  background-color: #f0f0f0;
 }
 
 .App-link {
